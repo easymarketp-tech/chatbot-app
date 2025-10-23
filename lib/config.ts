@@ -9,7 +9,7 @@ export const STARTER_PROMPTS: StartScreenPrompt[] = [
   {
     label: "Track Order",
     prompt: "I want to track my order.",
-    icon: "circle-question",
+    icon: "shopping-bag",
   },
   {
     label: "Report Issue",
@@ -39,7 +39,7 @@ export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
       level: 1,
     },
     background: {
-      primary: "#000000", // Black
+      primary: "#000000", // Black background
       secondary: "#111111",
     },
     text: {
