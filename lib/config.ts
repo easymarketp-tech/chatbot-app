@@ -12,17 +12,17 @@ export const STARTER_PROMPTS: StartScreenPrompt[] = [
   {
     label: "Track Order",
     prompt: "I want to track my order.",
-    icon: "truck",
+    icon: "circle-question",
   },
   {
     label: "Report Issue",
     prompt: "I want to report an issue with my order or product.",
-    icon: "triangle-exclamation",
+    icon: "warning",
   },
   {
     label: "Product Inquiry",
     prompt: "I have a question about a product.",
-    icon: "circle-question",
+    icon: "chat",
   },
 ];
 
