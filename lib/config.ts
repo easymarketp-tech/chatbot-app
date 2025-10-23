@@ -7,25 +7,15 @@ export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 
 export const STARTER_PROMPTS: StartScreenPrompt[] = [
   {
-    label: "Track Order",
-    prompt: "I want to track my order.",
-    icon: "shopping-bag",
-  },
-  {
-    label: "Report Issue",
-    prompt: "I want to report an issue with my order or product.",
-    icon: "circle-exclamation",
-  },
-  {
-    label: "Product Inquiry",
-    prompt: "I have a question about a product.",
-    icon: "chat",
+    label: "Track Order", "Report Issue", "Product Inquiry",
+    prompt: "Track Order", "Report Issue", "Product Inquiry",
+    icon: "circle-question",
   },
 ];
 
-export const PLACEHOLDER_INPUT = "Type your message here...";
+export const PLACEHOLDER_INPUT = "Ask anything...";
 
-export const GREETING = `KJC Store Assistant\nHow can I help you today?`;
+export const GREETING = "KJCSTORE Customer Assitant. How can I help you today?";
 
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
   color: {
@@ -35,15 +25,15 @@ export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
       shade: -5,
     },
     accent: {
-      primary: "#FFD700", // Gold
+      primary: "#FFD700",
       level: 1,
     },
     background: {
-      primary: "#000000", // Black background
+      primary: "#000000",
       secondary: "#111111",
     },
     text: {
-      primary: "#FFFFFF", // White text
+      primary: "#FFFFFF",
       secondary: "#E5E5E5",
     },
   },
