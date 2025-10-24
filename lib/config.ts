@@ -19,19 +19,19 @@ export const GREETING = "KJCSTORE Customer Assistant";
 
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
   color: {
-    // Grayscale tones — set darkest shade for dark mode
+    // Grayscale tones for neutral elements
     grayscale: {
       hue: 220,
       tint: 8,
-      shade: theme === "dark" ? -4 : -2, // darkest allowed for dark mode
+      shade: theme === "dark" ? -1 : -4, // darkest allowed for dark mode
     },
     // Accent color for buttons, highlights, icons
     accent: {
-      primary: theme === "dark" ? "#FFD700" : "#0f172a", // gold for dark, default for light
+      primary: theme === "dark" ? "#FFD700" : "#0f172a", // gold for dark mode
       level: 1,
     },
   },
-  radius: "xl", // rounded corners
+  radius: "round", // valid options: "pill" | "round" | "soft" | "sharp"
+  // Add other theme options here
+  // chatkit.studio/playground to explore config options
 });
-// Add other theme options here
-// chatkit.studio/playground to explore config options
